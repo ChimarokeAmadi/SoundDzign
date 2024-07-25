@@ -1,0 +1,58 @@
+footer {
+	color: #ffffff;
+	padding: 50px 0px;
+}
+
+footer a {
+	color: #ffffff;
+}
+
+.red-text {
+	color: var(--red-color);
+}
+
+#logo {
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.contact {
+	display: flex;
+	justify-content: space-between;
+}
+
+.alegreya {
+	font-family: "Alegreya", serif;
+}
+
+.fs-18 {
+	font-size: 18px;
+}
+
+.no-list-style {
+	list-style: none;
+	padding: 0px 0px 0px 20px;
+}
+
+footer svg.margin {
+	margin: 0px 16px;
+}
+
+/* Smartphone Version */
+@media (max-width: 720px) {
+	footer {
+		padding: 50px 32px 48px 32px;
+		width: auto;
+	}
+
+	.contact {
+		flex-direction: column;
+	}
+
+	p.fs-14 {
+		font-size: 14px;
+		width: 100%;
+		margin-bottom: 0px;
+	}
+}

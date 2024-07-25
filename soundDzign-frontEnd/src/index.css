@@ -1,0 +1,94 @@
+:root {
+	--dark-color: #181e1e;
+	--red-color: #e63946;
+	--pink-color: #ff6864;
+	--yellow-color: #ffca28;
+	--grey-color: #212121;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "inter", sans-serif;
+	background-color: black;
+}
+
+.wrapper {
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+section {
+	padding: 80px;
+	color: #ffffff;
+}
+
+section h2 {
+	color: #ffffff;
+	font-size: 40px;
+	font-weight: 800;
+	position: relative;
+	margin-bottom: 0;
+}
+
+section h2::after {
+	content: url("/src/assets/Rectangle7.png");
+	position: absolute;
+	left: 0;
+	bottom: -12px;
+}
+
+section h2.light::after {
+	content: url("/src/assets/Rectangle7_yello.png");
+}
+
+.black {
+	background-color: black;
+}
+
+.dark-grey {
+	background-color: var(--dark-color);
+}
+
+.pink {
+	background-color: var(--pink-color);
+}
+
+section .content-container {
+	display: flex;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* Tablet Version */
+
+@media (max-width: 1024px) {
+	.wrapper {
+		max-width: 754px;
+	}
+}
+
+/* Smartphone Version */
+
+@media (max-width: 720px) {
+	.wrapper {
+		max-width: 311px;
+	}
+
+	section h2::after {
+		content: url("../src/assets/Rectangle\ 7_mobile.png");
+		bottom: -12px;
+	}
+}

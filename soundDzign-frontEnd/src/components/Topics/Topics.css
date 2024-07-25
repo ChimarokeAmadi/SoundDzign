@@ -1,0 +1,68 @@
+#topics .image-container {
+	width: 558px;
+	height: 287px;
+	position: relative;
+}
+
+#topics .image-container::after {
+	content: url("../../assets/Group7.png");
+	position: absolute;
+	right: -30px;
+	bottom: -30px;
+}
+
+.image-container img {
+	width: 100%;
+	height: 100%;
+}
+
+#topics .content-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+#topics ul {
+	color: var(--red-color);
+}
+
+#topics ul span {
+	color: #ffffff;
+}
+
+#topics ul li {
+	font-family: "Alegreya";
+	font-size: 20px;
+	font-weight: 400;
+	margin: 24px 0px;
+}
+
+/* Tablet Version */
+@media (max-width: 1024px) {
+	#topics .image-container {
+		width: 385px;
+		height: 287px;
+	}
+}
+
+/* Smartphone Version */
+@media (max-width: 720px) {
+	#topics .image-container {
+		display: none;
+		position: unset;
+	}
+
+	#topics h2 {
+		font-size: 24px;
+	}
+
+	#topics .wrapper {
+		position: relative;
+	}
+
+	#topics .wrapper::after {
+		position: absolute;
+		content: url("../../assets/Group7.png");
+		right: 0;
+		bottom: 0;
+	}
+}

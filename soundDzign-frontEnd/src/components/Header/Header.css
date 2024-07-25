@@ -1,0 +1,94 @@
+header {
+	min-height: 100vh;
+	background: url("../../src/assets/Rectangle8.png");
+	background-size: cover;
+	margin: 0;
+	background-position: center;
+}
+
+header .wrapper {
+	position: relative;
+	margin: 0 auto;
+	height: 100vh;
+}
+
+header .cta {
+	width: 453px;
+	height: 318px;
+	margin: 0;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	border-radius: 20px 20px 0px 0px;
+	border-color: #ffffff;
+	border-style: solid;
+	border-width: 4px 4px 0px 4px;
+	padding: 50px 40px;
+	background: rgb(0, 0, 0, 0.5);
+	backdrop-filter: blur(20px);
+}
+
+.course-name {
+	font-weight: 800;
+	font-size: 16px;
+	color: #ffffff;
+	position: relative;
+}
+
+.course-name::after {
+	content: "";
+	width: 60px;
+	height: 4px;
+	background-color: var(--red-color);
+	position: absolute;
+	left: 0;
+	bottom: -16px;
+}
+
+header .cta h1 {
+	font-family: "Alegreya", sans-serif;
+	color: #ffffff;
+	font-weight: 800;
+	font-size: 40px;
+	text-shadow: 0 0 8px black;
+}
+
+header .cta .demo-btn {
+	border-radius: 10px;
+	background-color: var(--red-color);
+	color: #ffffff;
+	padding: 10px 32px;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+/* Tablet Version */
+@media (max-width: 1024px) {
+	header .cta {
+		width: 356px;
+		height: 326px;
+	}
+}
+
+/* Smartphone Version */
+@media (max-width: 720px) {
+	header .cta {
+		width: 311px;
+		height: 281px;
+		padding: 41px 20px 0px 20px;
+	}
+
+	.course-name {
+		margin: 0px;
+	}
+
+	.course-name::after {
+		content: "";
+		width: 60px;
+		height: 4px;
+		background-color: var(--red-color);
+		position: absolute;
+		left: 0;
+		bottom: -5px;
+	}
+}
